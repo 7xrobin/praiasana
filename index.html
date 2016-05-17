@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Robson Oliveira">
 
 
     <title>PraiaSana Residencial</title>
@@ -133,56 +133,71 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Acomodações</h2>
-                    <h3 class="section-subheading text-muted">Veja as opções de apartamentos aconchegantes que temos para você.</h3>
+                    <h3 class="section-subheading text-muted">Conheça um pouco da nossa estrutura e apartamentos aconchegantes que temos para você.</h3>
                 </div>
             </div>
             <div class="row">
-                <!-- Quarto A -->
+                 <!-- Edificio -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#predioModal" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/acomodacoes/quarto1.jpg" class="img-responsive" alt="">
+                        <img src="img/fotos/recepcao.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Prédio</h4>
+                        <p class="text-muted">Recepção, fachada e proximidades</p>
+                    </div>
+                </div>
+                <!-- Apartamento A -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#apartamentoA" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/fotos/apA/sala.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Apartamento A</h4>
-                        <p class="text-muted">Diária R$ xxx</p>
+                        <p class="text-muted">Apartamento 2 quartos sendo uma suíte com Ar condicionado </p>
                     </div>
                 </div>
-                <!-- QUarto B -->
+                <!-- Apartamento B -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a href="#apartamentoB" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/acomodacoes/quarto2.jpg" class="img-responsive" alt="">
+                        <img src="img/fotos/apB/sofa.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Apartamento B</h4>
-                        <p class="text-muted">Diária R$ xxx</p>
+                        <p class="text-muted">Apartamento com 2 quarto sem Ar Condicinado</p>
                     </div>
-                </div>
-                <!-- Quarto C -->
+                </div> 
+                 <!-- Apartamento C -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="#apartamentoC" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/acomodacoes/quarto3.jpg" class="img-responsive" alt="">
+                        <img src="img/fotos/apC/quarto.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Apartamento C</h4>
-                        <p class="text-muted">Diária R$ xxx</p>
+                        <p class="text-muted">Apartamento com 1 quarto sem Ar Condicinado</p>
                     </div>
-                </div>
-            </div>
+                </div> 
+            </div>         
         </div>
     </section>
 
@@ -271,10 +286,41 @@
         </div>
     </footer>
 
-   
+    <!-- Detalhes do prédio -->
+    <div class="portfolio-modal modal fade" id="predioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Acomodacao Details Go Here -->
+                            <h2>Prédio</h2>
+                            <p class="item-intro text-muted">Detallhes do Prédio</p>
+                            <img class="img-responsive img-centered" src="img/fotos/recepcao.jpg" alt="Recepção">
+                            <p>Recepção</p>
+                            <img class="img-responsive img-centered" src="img/fotos/frente.jpg" alt="Faixada">
+                            <p>Faixada do Prédio</p>
+                            <img class="img-responsive img-centered" src="img/fotos/vista_rua.jpg" alt="Vista da Rua">
+                            <img class="img-responsive img-centered" src="img/fotos/calcada.jpg" alt="Calçadão">
+                            <p>Calçadão próximo ao Residencial</p>
+                            <p>Essas são algumas das áreas que você pode desfrutar no Residencial PraiaSana.</p>
+                                
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Acomodação Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Detalhes Ap A -->
+    <div class="portfolio-modal modal fade" id="apartamentoA" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -289,10 +335,11 @@
                             <!-- Acomodacao Details Go Here -->
                             <h2>Apartamento A</h2>
                             <p class="item-intro text-muted">Detallhes do Apartamento</p>
-                            <img class="img-responsive img-centered" src="img/acomodacoes/quarto1.jpg" alt="">
-                            <p>Use essa área para dar informações sobre este apartamento</p>
+                            <img class="img-responsive img-centered" src="img/fotos/apA/sala.jpg" alt="sala"><img class="img-responsive img-centered" src="img/fotos/apA/quarto.jpg" alt="quarto">
+                            <img class="img-responsive img-centered" src="img/fotos/apA/sofa.jpg" alt="sala"><img class="img-responsive img-centered" src="img/fotos/apA/banheiro.jpg" alt="banheiro">
+                            <p>Apartamento de 2/quartos sendo a suíte com ar condicionado, mobiliado com camas , geladeira microondas, sofá, armários, TV a cabo e internet .</p>
                                 
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar Apartamento</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar </button>
                         </div>
                     </div>
                 </div>
@@ -300,8 +347,8 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Detalhes Ap B -->
+    <div class="portfolio-modal modal fade" id="apartamentoB" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -316,18 +363,19 @@
                              <!-- Acomodacao Details Go Here -->
                             <h2>Apartamento B</h2>
                             <p class="item-intro text-muted">Detallhes do Apartamento</p>
-                            <img class="img-responsive img-centered" src="img/acomodacoes/quarto2.jpg" alt="">
-                            <p>Use essa área para dar informações sobre este apartamento</p>
+                            <img class="img-responsive img-centered" src="img/fotos/apB/sofa.jpg" alt="Sala"><img class="img-responsive img-centered" src="img/fotos/apB/sala.jpg" alt="Sala">
+                            <p>Apartamento de 2 quartos  sem ar condicionado, mobiliado com camas , geladeira microondas, sofá, armários, TV a cabo e internet .</p>
                                 
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar Apartamento</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Detalhes apartamento C -->
+    <div class="portfolio-modal modal fade" id="apartamentoC" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -342,15 +390,18 @@
                              <!-- Acomodacao Details Go Here -->
                             <h2>Apartamento C</h2>
                             <p class="item-intro text-muted">Detallhes do Apartamento</p>
-                            <img class="img-responsive img-centered" src="img/acomodacoes/quarto2.jpg" alt="">
-                            <p>Use essa área para dar informações sobre este apartamento</p>
+                            <img class="img-responsive img-centered" src="img/fotos/apC/quarto.jpg" alt="Quarto"><img class="img-responsive img-centered" src="img/fotos/apB/sala.jpg" alt="Sala"><img class="img-responsive img-centered" src="img/fotos/apC/cama.jpg" alt="Cama"><img class="img-responsive img-centered" src="img/fotos/apC/cozinha.jpg" alt="Cozinha">
+
+                            <p>Apartamento de um quarto e cozinha, mobiliado com camas , geladeira microondas, armários, TV a cabo e internet.</p>
                                 
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar Apartamento</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
    
     
 
