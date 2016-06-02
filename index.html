@@ -203,12 +203,45 @@
 
     <!-- Localização Section -->
     <section class="map-section">
-        <div class="map localizacao" id="localizacao">
+        <div class="localizacao" id="localizacao">
             <div class="col-lg-12 text-center"> 
                 <h2 class="section-heading">Localização</h2>
                 <h3 class="section-subheading text-muted">Endereço vem aqui</h3>
             </div>
-            <img src="img/googlemap.png">
+
+            <div class="map">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:100%;'><div id='gmap_canvas' style='height:400px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/pt'>Maps-Generator</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d0e03c0072f5e9ee369d4b915b1954ddc95a25ad'></script>
+                <script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(-3.736114, -38.456471),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-3.736114, -38.456471)});infowindow = new google.maps.InfoWindow({content:'<strong>Residencial - Praia Sana</strong><br>Av Dioguinho , 2200<br> Fortaleza-CE<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            </div>>
+            <!-- <div class="map map-container">
+                <script src="https://maps.googleapis.com/maps/api/js?sensor=false"
+             async defer></script>
+                <script>    
+                  function init_map() {
+                    var var_location = new google.maps.LatLng(45.430817,12.331516);
+             
+                    var var_mapoptions = {
+                      center: var_location,
+                      zoom: 14
+                    };
+             
+                    var var_marker = new google.maps.Marker({
+                        position: var_location,
+                        map: var_map,
+                        title:"Venice"});
+             
+                    var var_map = new google.maps.Map(document.getElementById("map-container"),
+                        var_mapoptions);
+             
+                    var_marker.setMap(var_map); 
+             
+                  }
+             
+                  google.maps.event.addDomListener(window, 'load', init_map);
+     
+                </script>
+            </div> -->
         </div>
     </section>
 
@@ -403,7 +436,7 @@
     </div>
 
    
-    
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
