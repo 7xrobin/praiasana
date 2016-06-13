@@ -192,6 +192,9 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fec503
 }
 @media (min-width: 768px) {
+    .navbar-right{
+        margin-right: -8%;
+    }
     .navbar-default {
         background-color: transparent;
         padding: 25px 0;
@@ -231,10 +234,8 @@ header {
     text-align: center;
     color: #fff
 }
-header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px
-}
+
+
 header .intro-text .intro-lead-in {
     font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
     font-style: italic;
@@ -252,8 +253,8 @@ header .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
     header .intro-text {
-/*        padding-top: 300px;
-*/        padding-bottom: 200px
+        padding-top: 80px;
+        padding-bottom: 100px
     }
     header .intro-text .intro-lead-in {
         font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
@@ -263,11 +264,6 @@ header .intro-text .intro-heading {
     }
     header .intro-text .intro-heading {
         font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 55px;
-        line-height: 75px;
-        margin-bottom: 50px
     }
 }
 section {
@@ -382,12 +378,15 @@ section h3.section-subheading {
 }
 
 section#contact {
-    background-color: #000033;
+    background-color: #2b7d88;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat
 }
 section#contact .section-heading {
+    color: #fff
+}
+section#contact .section-subheading{
     color: #fff
 }
 section#contact .form-group {
@@ -565,5 +564,11 @@ body {
     width: 100%;
 }
 #logo_big{
-    width: 30%
+    width: 35%
+}
+
+@media (min-width: 768px) {
+    #logo_big{
+        width: 20%
+    }
 }
