@@ -567,15 +567,28 @@ body {
     width: 35%
 }
 
-.sociallink img{
-    width: 60%;
+
+.sociallink img:hover{
+    transform: scale(1.1);
 }
-.email{
+/*.email{
     text-align: center;
 
-}
+}*/
 @media (min-width: 768px) {
     #logo_big{
         width: 20%
     }
+    .sociallink img{
+        max-width: 30%;
+    }
+}
+
+.sociallink img{
+        max-width: 80%;
+    }
+
+.centerBlock{
+    display: table;
+    margin: 0 auto;
 }
