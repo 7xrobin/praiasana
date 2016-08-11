@@ -34,12 +34,10 @@ gulp.task('css', function(){
     .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('img', function(){
-	 return gulp.src('img/**/*')
-    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-    .pipe(gulp.dest('dist/img'));
-});
+// gulp.task('img', function(){
+// 	 return gulp.src(['img/**/*', '!img/atrativo/*'])
+//     .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+//     .pipe(gulp.dest('dist/img'));
+// });
 
-gulp.task('default', function(){
-	gulp.run('js');
-});
+gulp.task('default', ['js','css', 'html']);
