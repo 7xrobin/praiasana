@@ -1,3 +1,4 @@
+
 var gulp    = require('gulp'),
       gutil    = require('gulp-util'),
       uglify  = require('gulp-uglify'),
@@ -5,6 +6,8 @@ var gulp    = require('gulp'),
       CleanCSS = require('gulp-clean-css'),
       autoprefixer = require('gulp-autoprefixer'),
       htmlmin = require ('gulp-htmlmin'),
+      cache = require('gulp-cache'),
+      imagemin = require('gulp-imagemin'),
       concat  = require('gulp-concat');
 
 // Minify html
@@ -31,7 +34,11 @@ gulp.task('css', function(){
     .pipe(gulp.dest('dist/css'));
 });
 
-gulp
+gulp.task('img', function(){
+	 return gulp.src('img/**/*')
+    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(gulp.dest('dist/img'));
+});
 
 gulp.task('default', function(){
 	gulp.run('js');
