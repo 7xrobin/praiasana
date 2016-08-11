@@ -275,7 +275,7 @@ section h2.section-heading {
     margin-bottom: 15px
 }
 section h3.section-subheading {
-    font-size: 16px;
+    font-size: 19px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: none;
     font-style: italic;
@@ -564,31 +564,39 @@ body {
     width: 100%;
 }
 #logo_big{
-    width: 35%
+    width: 35%;
+}
+@media (max-width: 480px){
+    #logo_big{
+        margin-top: 15%;
+    }
 }
 
 
 .sociallink img:hover{
     transform: scale(1.1);
 }
-/*.email{
-    text-align: center;
 
-}*/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     #logo_big{
         width: 20%
     }
-    .sociallink img{
-        max-width: 30%;
-    }
+}
+
+.centerBlock{
+    text-align: center;
+    display: table;
+    margin: 0 auto;
 }
 
 .sociallink img{
-        max-width: 80%;
+        max-width: 20%;
+        margin: 0 20px;
     }
 
-.centerBlock{
-    display: table;
-    margin: 0 auto;
+
+.contacts h2{
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
 }
